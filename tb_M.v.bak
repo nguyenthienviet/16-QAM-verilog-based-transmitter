@@ -1,0 +1,103 @@
+`timescale 1ns / 1ns
+module tb_M;
+
+	// Inputs
+	reg clk;
+	reg rst;
+	reg start;
+
+	// Outputs
+	//wire [3:0] parallel_data;
+	//wire       serial_in;
+	//wire       data_flag;
+	//wire [15:0]  sin, cos;
+	wire [19:0]  mixed_output;
+	integer  mixed_out;
+
+	// DUT
+	top_level  top(
+	   .clk(clk),
+	   .rst(rst),
+	   .start(start),
+	   .mixed_output(mixed_output)
+	   );
+	/*data_generator dat_gen(
+	   .clk(clk),
+	   .rst(rst),
+	   .enable(start),
+	   .serial_in(serial_in),
+	   .data_flag(data_flag)
+	   );
+	serial_2_parallel dut (
+		.clk(clk), 
+		.rst(rst), 
+		.start(start), 
+		.serial_in(serial_in),
+		.data_flag(data_flag),
+		.parallel_data(parallel_data)
+	);
+	local_oscillator lo(
+	   .clk(clk),
+	   .rst(rst),
+	   .start(start),
+	   .sin(sin),
+	   .cos(cos)
+	   );
+	modulator md(
+      .clk(clk),
+      .rst(rst),
+      .start(start),
+      .parallel_data(parallel_data),
+      .sin(sin),
+      .cos(cos),
+      .mixed_output(mixed_output)
+      );*/
+
+	initial begin
+		// Initialize Inputs
+		clk = 0;
+		rst = 0;
+		start = 1;
+		
+
+
+		// Wait 10 ns for global reset to finish
+		#10;
+		rst = 1;
+	end
+	
+	always #5
+	clk <= ~clk;
+	
+	integer i = 0;
+	
+	always @(posedge clk) begin
+	   if(i) begin $fwrite(mixed_out,"%b \n", mixed_output); i = 0;end
+	   else i = 1;
+	   end
+	  
+	initial begin
+	  #40850
+	  mixed_out = $fopen("mixed_out.txt");
+	  #652800
+	  $fclose(mixed_out);
+	  end
+	
+	initial begin
+		#700000
+			$stop;
+	end
+	
+	/*always @(posedge clk) begin
+	 data_flag = 0;
+	 if(i == 7) begin
+	   serial_in = $unsigned($random)%2;
+	   data_flag = 1;
+	   i = i-1;
+	   end
+	 else if(i == 0) i = 7;
+	   else i = i-1;
+	end*/
+
+endmodule
+

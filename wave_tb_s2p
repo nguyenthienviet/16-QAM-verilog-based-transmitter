@@ -1,0 +1,38 @@
+onerror {resume}
+radix fpoint 3
+quietly WaveActivateNextPane {} 0
+add wave -noupdate /tb_S2P/clk
+add wave -noupdate /tb_S2P/rst
+add wave -noupdate /tb_S2P/start
+add wave -noupdate /tb_S2P/serial_in
+add wave -noupdate /tb_S2P/data_flag
+add wave -noupdate /tb_S2P/i
+add wave -noupdate /tb_S2P/dut/shift
+add wave -noupdate /tb_S2P/dut/parallel_data
+add wave -noupdate /tb_S2P/dut/shift_reg
+add wave -noupdate /tb_S2P/dut/data_reg
+add wave -noupdate -radix unsigned /tb_S2P/dut/bit_cnt
+add wave -noupdate -radix unsigned /tb_S2P/dut/state
+add wave -noupdate -radix unsigned /tb_S2P/dut/next_state
+add wave -noupdate /tb_S2P/dut/start_control
+add wave -noupdate /tb_S2P/dut/shift_reg_control
+add wave -noupdate /tb_S2P/dut/shift_data_control
+add wave -noupdate /tb_S2P/dut/inc_bit_cnt
+TreeUpdate [SetDefaultTree]
+WaveRestoreCursors {{Cursor 1} {131356 ps} 0}
+quietly wave cursor active 1
+configure wave -namecolwidth 213
+configure wave -valuecolwidth 51
+configure wave -justifyvalue left
+configure wave -signalnamewidth 0
+configure wave -snapdistance 10
+configure wave -datasetprefix 0
+configure wave -rowmargin 4
+configure wave -childrowmargin 2
+configure wave -gridoffset 0
+configure wave -gridperiod 1
+configure wave -griddelta 40
+configure wave -timeline 0
+configure wave -timelineunits ps
+update
+WaveRestoreZoom {0 ps} {519068 ps}

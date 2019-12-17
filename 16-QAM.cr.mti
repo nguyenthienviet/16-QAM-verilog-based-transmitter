@@ -1,0 +1,57 @@
+{C:/Users/vietn/Documents/school/20191/02 TKICS/01 Projects/01 16-QAM/top_level.v} {1 {vlog -work work {C:/Users/vietn/Documents/school/20191/02 TKICS/01 Projects/01 16-QAM/top_level.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module top_level
+
+Top level modules:
+	top_level
+
+} {} {}} {C:/Users/vietn/Documents/school/20191/02 TKICS/01 Projects/01 16-QAM/tb_S2P.v} {1 {vlog -work work {C:/Users/vietn/Documents/school/20191/02 TKICS/01 Projects/01 16-QAM/tb_S2P.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module tb_S2P
+
+Top level modules:
+	tb_S2P
+
+} {} {}} {C:/Users/vietn/Documents/school/20191/02 TKICS/01 Projects/01 16-QAM/local_oscillator.v} {1 {vlog -work work {C:/Users/vietn/Documents/school/20191/02 TKICS/01 Projects/01 16-QAM/local_oscillator.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module local_oscillator
+
+Top level modules:
+	local_oscillator
+
+} {} {}} {C:/Users/vietn/Documents/school/20191/02 TKICS/01 Projects/01 16-QAM/tb_M.v} {1 {vlog -work work {C:/Users/vietn/Documents/school/20191/02 TKICS/01 Projects/01 16-QAM/tb_M.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module tb_M
+
+Top level modules:
+	tb_M
+
+} {} {}} {C:/Users/vietn/Documents/school/20191/02 TKICS/01 Projects/01 16-QAM/modulator.v} {1 {vlog -work work {C:/Users/vietn/Documents/school/20191/02 TKICS/01 Projects/01 16-QAM/modulator.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module modulator
+
+Top level modules:
+	modulator
+
+} {} {}} {C:/Users/vietn/Documents/school/20191/02 TKICS/01 Projects/01 16-QAM/tb_LO.v} {1 {vlog -work work {C:/Users/vietn/Documents/school/20191/02 TKICS/01 Projects/01 16-QAM/tb_LO.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module tb_LO
+
+Top level modules:
+	tb_LO
+
+} {} {}} {C:/Users/vietn/Documents/school/20191/02 TKICS/01 Projects/01 16-QAM/data_generator.v} {1 {vlog -work work {C:/Users/vietn/Documents/school/20191/02 TKICS/01 Projects/01 16-QAM/data_generator.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module data_generator
+
+Top level modules:
+	data_generator
+
+} {} {}} {C:/Users/vietn/Documents/school/20191/02 TKICS/01 Projects/01 16-QAM/serial_2_parallel.v} {1 {vlog -work work {C:/Users/vietn/Documents/school/20191/02 TKICS/01 Projects/01 16-QAM/serial_2_parallel.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module serial_2_parallel
+
+Top level modules:
+	serial_2_parallel
+
+} {} {}}

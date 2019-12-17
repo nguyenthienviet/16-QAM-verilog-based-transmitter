@@ -1,0 +1,34 @@
+onerror {resume}
+radix fpoint 3
+quietly WaveActivateNextPane {} 0
+add wave -noupdate /tb_sin_cos_lut/clk
+add wave -noupdate /tb_sin_cos_lut/rst
+add wave -noupdate /tb_sin_cos_lut/start
+add wave -noupdate -format Analog-Step -height 74 -max 32767.0 -min -32767.0 -radix decimal /tb_sin_cos_lut/sin
+add wave -noupdate -format Analog-Step -height 74 -max 32767.0 -min -32767.0 -radix decimal /tb_sin_cos_lut/cos
+add wave -noupdate /tb_sin_cos_lut/uut/address_0
+add wave -noupdate /tb_sin_cos_lut/uut/state
+add wave -noupdate /tb_sin_cos_lut/uut/next_state
+add wave -noupdate /tb_sin_cos_lut/uut/start_control
+add wave -noupdate /tb_sin_cos_lut/uut/inc_dir_part_control
+add wave -noupdate /tb_sin_cos_lut/uut/add_update_0_control
+add wave -noupdate /tb_sin_cos_lut/uut/add_update_1_control
+add wave -noupdate /tb_sin_cos_lut/uut/assign_control
+TreeUpdate [SetDefaultTree]
+WaveRestoreCursors {{Cursor 1} {9860000 ps} 0}
+quietly wave cursor active 1
+configure wave -namecolwidth 203
+configure wave -valuecolwidth 100
+configure wave -justifyvalue left
+configure wave -signalnamewidth 0
+configure wave -snapdistance 10
+configure wave -datasetprefix 0
+configure wave -rowmargin 4
+configure wave -childrowmargin 2
+configure wave -gridoffset 0
+configure wave -gridperiod 1
+configure wave -griddelta 40
+configure wave -timeline 0
+configure wave -timelineunits ps
+update
+WaveRestoreZoom {0 ps} {21 us}
